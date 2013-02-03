@@ -1,0 +1,111 @@
+
+
+body.benefits section {
+  width: 950px;
+  height: 330px;
+  margin: 125px auto 25px; }
+
+body.benefits section.signup_strip {
+  margin-bottom: 0;
+  margin-top: 10; }
+
+
+@media only screen and (max-width: 40em) {
+  body.help-911 {
+    width: 100%; } }
+@media only screen {
+section.signup_strip {
+  margin-top: 10px;
+  padding: 30px 0 20px 0px;
+  height: auto !important;
+  background-color: #f4f0e6;
+  border-radius: 9px;
+  position: relative; }
+  section.signup_strip h2 {
+    font-size: 24px;
+    color: #c00;
+    margin: 0 0 5px 0;
+    padding: 0; }
+  section.signup_strip h3 {
+    margin: 0 0 30px 0;
+    font-weight: normal;
+    color: #AA9C84; }
+  section.signup_strip label.input span {
+    margin-left: 10px; }
+  section.signup_strip input {
+    border: 1px solid #CCC;
+    border-top: 1px solid #999;
+    padding: 5px;
+    font-size: 18px;
+    width: 400px;
+    margin-right: 20px;
+    height: 25px;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px; }
+    section.signup_strip input:focus {
+      background-color: white;
+      border: 1px solid #393;
+      box-shadow: #393 0px 0px 5px;
+      -moz-box-shadow: #393 0px 0px 5px;
+      -webkit-box-shadow: #393 0px 0px 5px;
+      outline: none; }
+  section.signup_strip input[type="button"], section.signup_strip input[type="submit"] {
+    border: 1px solid #393;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    height: 42px;
+    padding: 0 10px;
+    cursor: pointer;
+    background-color: #393;
+    display: inline;
+    width: auto;
+    -webkit-appearance: none;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px; }
+
+
+.signup_form table td {
+  vertical-align: top; }
+
+/* Firefox Labels */
+label.input {
+  display: block;
+  position: relative;
+  text-align: left; }
+  label.input span {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 18px;
+    color: #a9a9a9;
+    z-index: 1;
+    cursor: text;
+    text-align: left; }
+  label.input input, label.input textarea, label.input select {
+    z-index: 0;
+    font-size: 18px; }
+
+
+
+
+    section.browserupgrade a.chrome:hover {
+      text-decoration: underline; }
+* {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #000;
+  font-family: "ProximaNova", "Helvetica Neue", helvetica, arial, sans-serif; }
+
+section, article, header, footer, nav, aside, hgroup {
+  display: block; }
