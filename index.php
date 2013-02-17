@@ -1,7 +1,7 @@
 <?php
 
 // By woncarloz2@yahoo.com
-// ver020213
+// ver021613
 // File Description: PHP script that shows sites side by side if you pass a $left and $right var in a frameset.
 // This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
 
@@ -16,6 +16,10 @@ if (empty($left)) {
 
 if (empty($right)) {
 	$right = "http://www.apple.com/";
+}
+
+if ($_GET["submit-diff"] == "View Diff! ")  {
+	header( 'Location: view_diff2.php?site1='.$left.'&site2='.$right ) ;
 }
 
 
@@ -90,7 +94,8 @@ if ((empty($_GET["tinyurl"])) && ((!empty($_GET["left"])) || (!empty($_GET["righ
 		echo "<a href=".$tinry_url.">".$tinry_url."</a>";
 	}
 
-	echo '<p><input type="submit" name="submit" value="View Split!"/><p>';
+	echo '<p><input type="submit" name="submit-split" value="View Split!"/> ';
+	echo '<input type="submit" name="submit-diff" value="View Diff! "/><p>';
 	echo '<br><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" /></a><br /><small><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dct:title" rel="dct:type">Split Viewer</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://woncarloz2.net16.net/splitview/" property="cc:attributionName" rel="cc:attributionURL">woncarloz</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/woncarloz/splitview.git" rel="dct:source">https://github.com/woncarloz/splitview.git</a>.</small>';
 	echo "</form></section></center></div>";
 	echo '<p><center>Example Split Result<br><img alt="Example Split Result" src="https://www.evernote.com/shard/s22/sh/b55f41bc-12a8-40ef-b05b-c48ff5768143/a4f881b14ef934be9d04c68f3fd6f131/res/637b7822-9859-4f04-ba5a-fd9ec6cd7a4a/skitch.png" />';
